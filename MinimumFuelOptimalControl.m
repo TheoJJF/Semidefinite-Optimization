@@ -1,6 +1,6 @@
 clc; clear;
 
-addpath(genpath("path/to/mosek"))
+addpath(genpath("path/to/mosek"));
 
 n = 3;
 N = 30;
