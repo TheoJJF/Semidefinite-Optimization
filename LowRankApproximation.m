@@ -1,6 +1,6 @@
 clc; clear;
 
-A = imread("assets/Geisel Library.jpg");
+A = imread("path/to/image");
 A = im2double(A);
 A = rgb2gray(A);
 
