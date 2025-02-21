@@ -32,7 +32,7 @@ options = sdpsettings('solver','mosek',...
 
 sol = optimize(constraints,objective,options);
 
-stairs(0:N-1,u,'linewidth',2);
-axis tight;
-xlabel('t');
-ylabel('u');
+stairs(0:N-1,u,'linewidth',2)
+axis tight
+xlabel('t')
+ylabel('u')
