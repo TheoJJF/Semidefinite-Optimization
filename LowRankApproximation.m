@@ -1,6 +1,6 @@
 clc; clear;
 
-A = imread("path/to/image");
+A = imread("assets/Geisel Library.jpg");
 A = im2double(A);
 A = rgb2gray(A);
 
@@ -20,14 +20,14 @@ for k = K
 end
 
 figure(1)
-subplot(1,2,1);
-plot(K,Error,'-o');
-grid on;
-xlabel('$k$','Interpreter','latex');
-ylabel('$\|A-A_k\|_\mathcal{F}$','Interpreter','latex');
+subplot(1,2,1)
+plot(K,Error,'-o')
+grid on
+xlabel('$k$','Interpreter','latex')
+ylabel('$\|A-A_k\|_\mathcal{F}$','Interpreter','latex')
 
-subplot(1,2,2);
-plot(K,m*n-(m+n+1)*K,'-o');
-grid on;
-xlabel('$k$','Interpreter','latex');
-ylabel('Total savings','Interpreter','latex');
+subplot(1,2,2)
+plot(K,m*n-(m+n+1)*K,'-o')
+grid on
+xlabel('$k$','Interpreter','latex')
+ylabel('Total savings','Interpreter','latex')
